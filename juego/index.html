@@ -15,6 +15,7 @@
         <div class="row">
             <div class="col-12">
                 <h1 class="text-center">Juego de parejas</h1>
+                <br>
                 <p>
                     <span class="h5">Intentos: </span>
                     {{intentos}}/{{MAXIMOS_INTENTOS}}&nbsp;<span class="h5">Aciertos:
@@ -27,7 +28,7 @@
         </div>
         <div v-for="(fila, indiceFila) in memorama" :key="indiceFila" class="row">
             <div :key="indiceFila+''+indiceImagen" class="col-3" v-for="(imagen, indiceImagen) in fila">
-                <div class="mb-3">
+                <div class="mb-3 juego">
                     <img @click="voltear(indiceFila, indiceImagen)" :class="{'girar': imagen.mostrar}" :src="(imagen.mostrar ? imagen.ruta :
                             NOMBRE_IMAGEN_OCULTA)" class="card-img-top img-fluid
                             img-thumbnail">

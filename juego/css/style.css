@@ -43,3 +43,37 @@ button {
     cursor: pointer;
     /* Cambia el cursor al pasar sobre el botón */
 }
+
+h1{
+    text-shadow: 0 0 10px rgb(255, 123, 0), 0 0 10px rgb(255, 123, 0), 0 0 10px rgb(255, 123, 0);
+}
+
+.juego{
+    margin-left: 30%;
+    margin-top: 15%;
+}
+
+.h5{
+    margin-left: 5%;
+    text-shadow: 0 0 10px rgb(230, 159, 8);
+    animation: moverColor 4s linear infinite;
+    animation-delay: 1.2s;
+}
+
+@keyframes moverColor {
+    0% {
+        text-shadow: 0 0 50px rgb(230, 159, 8);
+    }
+
+    50% {
+        text-shadow: 0 0 50px rgb(172, 64, 1);
+    }
+
+    75% {
+        text-shadow: 0 0 50px rgb(180, 96, 0);
+    }
+
+    100% {
+        text-shadow: 0 0 50px rgb(230, 159, 8);
+    }
+}
