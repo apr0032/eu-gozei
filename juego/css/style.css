@@ -43,3 +43,17 @@ button {
     cursor: pointer;
     /* Cambia el cursor al pasar sobre el botón */
 }
+
+h1{
+    text-shadow: 0 0 10px rgb(255, 123, 0), 0 0 10px rgb(255, 123, 0), 0 0 10px rgb(255, 123, 0);
+}
+
+.juego{
+    margin-left: 30%;
+    margin-top: 15%;
+}
+
+.h5{
+    margin-left: 5%;
+    text-shadow: 0 0 10px rgb(255, 123, 0), 0 0 10px rgb(255, 123, 0), 0 0 10px rgb(255, 123, 0);
+}
