@@ -1,20 +1,3 @@
-/*
-    Programado por Luis Cabrera Benito 
-
-  ____          _____               _ _           _       
- |  _ \        |  __ \             (_) |         | |      
- | |_) |_   _  | |__) |_ _ _ __ _____| |__  _   _| |_ ___ 
- |  _ <| | | | |  ___/ _` | '__|_  / | '_ \| | | | __/ _ \
- | |_) | |_| | | |  | (_| | |   / /| | |_) | |_| | ||  __/
- |____/ \__, | |_|   \__,_|_|  /___|_|_.__/ \__, |\__\___|
-         __/ |                               __/ |        
-        |___/                               |___/         
-    
-    
-    Blog:       https://parzibyte.me/blog
-    Ayuda:      https://parzibyte.me/blog/contrataciones-ayuda/
-    Contacto:   https://parzibyte.me/blog/contacto/
-*/
 const MAXIMOS_INTENTOS = 8, // Intentos máximos que tiene el jugador
     COLUMNAS = 4, // Columnas del memorama
     SEGUNDOS_ESPERA_VOLTEAR_IMAGEN = 1, // Por cuántos segundos mostrar ambas imágenes
@@ -24,12 +7,12 @@ new Vue({
     data: () => ({
         // La ruta de las imágenes. Puede ser relativa o absoluta
         imagenes: [
-            "./img/cabra.jpg",
-            "./img/conejo.jpg",
-            "./img/leon.jpg",
-            "./img/oveja.jpg",
-            "./img/perro.jpg",
-            "./img/gato.jpg",
+            "https://dbdzm869oupei.cloudfront.net/img/t-shirts/preview/25498.png",
+            "https://cadenaser.com/resizer/_bR4QYHHX4BO_t8AoLGasy5IbAI=/736x552/filters:format(jpg):quality(70)/cloudfront-eu-central-1.images.arcpublishing.com/prisaradio/OCLEXSAZV5EYVNC7B6JGISGPFI.jpg",
+            "https://img.freepik.com/vector-premium/dibujos-animados-halloween-zombie-coloreado-clipart_576561-2700.jpg?w=2000",
+            "https://ih1.redbubble.net/image.4176330708.1873/flat,750x,075,f-pad,750x1000,f8f8f8.u1.jpg",
+            "https://static.vecteezy.com/system/resources/previews/012/715/819/original/frankenstein-cartoon-cute-halloween-vector.jpg",
+            "https://us.123rf.com/450wm/illusmile/illusmile2203/illusmile220300239/183396813-parca-que-sostiene-la-guada%C3%B1a-linda-mascota-ilustraci%C3%B3n.jpg?ver=6",
         ],
         memorama: [],
         // Útiles para saber cuál fue la carta anteriormente seleccionada
@@ -44,26 +27,6 @@ new Vue({
         esperandoTimeout: false,
     }),
     methods: {
-        mostrarCreditos() {
-            Swal.fire({
-                title: "Acerca de",
-                html: `Creado por <a href="//parzibyte.me/blog">Luis Cabrera Benito</a>
-                <br>
-                <strong>Créditos</strong>
-                <br>
-                Imagen de signo de interrogación: 
-                <div>Icons made by <a href="https://www.flaticon.com/authors/roundicons" title="Roundicons">Roundicons</a> 
-                    from <a rel="nofollow" href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> 
-                    is licensed by 
-                    <a rel="nofollow" href="http://creativecommons.org/licenses/by/3.0/" 
-                    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
-                </div>
-                `,
-                confirmButtonText: "Cerrar",
-                allowOutsideClick: false,
-                allowEscapeKey: false,
-            });
-        },
         // Método que muestra la alerta indicando que el jugador ha perdido; después
         // de mostrarla, se reinicia el juego
         indicarFracaso() {

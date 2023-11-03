@@ -2,11 +2,9 @@
 <html lang="es">
     <head>
         <meta charset="utf-8">
-        <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1,shrink-to-fit=no">
-        <meta name="description" content="Jugar memorama en línea">
-        <title>Memorama con JavaScript, Bootstrap y Vue.JS</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1,shrink-to-fit=no">
+        <meta name="description" content="Jugar">
+        <title>Juego de parejas con JavaScript y Bootstrap</title>
         <link href="./css/bootstrap.min.css" rel="stylesheet">
         <link href="./css/style.css" rel="stylesheet">
     </head>
@@ -14,12 +12,11 @@
         <main role="main" class="container-fluid" id="app">
             <div class="row">
                 <div class="col-12">
-                    <h1 class="text-center">Juego de memorama</h1>
+                    <h1 class="text-center">Juego de parejas</h1>
                     <p>
                         <span class="h5">Intentos: </span>
                         {{intentos}}/{{MAXIMOS_INTENTOS}}&nbsp;<span class="h5">Aciertos:
                         </span> {{aciertos}}
-                        <br><a @click="mostrarCreditos" href="#">Acerca de</a>
                     </p>
                 </div>
             </div>
@@ -37,11 +34,6 @@
                 </div>
             </div>
         </main>
-        <footer class="px-2 py-2 fixed-bottom bg-success text-white">
-            <span>Programado con ❤️ por
-                <a class="text-white" href="//parzibyte.me/blog">Parzibyte</a>
-            </span>
-        </footer>
         <script src="./js/sweetalert2.all.min.js"></script>
         <script src="./js/vue.min.js"></script>
         <script src="./js/script.js"></script>
